@@ -900,6 +900,28 @@ section.seccion.skills#skills {
 }
 
 @media only screen and (max-width: 639px) {
+
+       
+    #language-buttons {
+        position: fixed;
+        top: 18px;
+        right: 5em;
+        display: flex;
+        gap: 10px;
+        z-index: 999;
+      }
+      
+      #language-buttons button {
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      
+      #language-buttons img {
+        width: 30px; /* Ajusta el ancho según sea necesario */
+        height: auto;
+        border-radius: 50%; /* Esto puede darle un efecto redondo a las imágenes */
+      }
     .amg-badge {
         flex: 0 0 calc(60% - 130px);
         /* Dos columnas en pantallas más pequeñas */
