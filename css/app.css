@@ -664,18 +664,17 @@ section.seccion.skills#skills {
 
 
 /* Estilos para pantallas de hasta 768px de ancho responsive */
-/* Estilos para pantallas de hasta 768px de ancho responsive */
-/* Estilos para pantallas de hasta 768px de ancho responsive */
-/* Estilos para pantallas de hasta 768px de ancho responsive */
-/* Estilos para pantallas de hasta 768px de ancho responsive */
-@media screen and (max-width: 768px) {
 
+
+@media screen and (max-width: 768px) {
+  
     html,
     body {
         margin: 0;
         padding: 0;
         height: 100%;
         overflow-x: hidden;
+        cursor: none;
         /* Evitar desplazamiento horizontal */
     }
 
@@ -687,7 +686,17 @@ section.seccion.skills#skills {
         cursor: none;
         /* Oculta el cursor en dispositivos móviles */
     }
-
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        font-size: inherit;
+        cursor: pointer; /* Cambiado de 'none' a 'pointer' */
+    }
+    #language-buttons button {
+        cursor: pointer;
+    }
+    
 
 
     .circulos {
@@ -899,6 +908,7 @@ section.seccion.skills#skills {
         padding-right: 10%;
 
     }
+    
 
     .amg-badge img {
         width: 160%;
@@ -941,7 +951,11 @@ section.seccion.skills#skills {
         right: 8em;
         display: flex;
         gap: 10px;
+        cursor: pointer;
     }
+    
+   
+
 
     .checkbox-label {
         /* Ajusta la posición según sea necesario */
@@ -954,3 +968,4 @@ section.seccion.skills#skills {
 
 }
     
+
